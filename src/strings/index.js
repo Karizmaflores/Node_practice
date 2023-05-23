@@ -6,16 +6,16 @@ const split = (str, delim) => {
 
 const pairs = (str) => {
   // write code for strings.pairs
-  str.split(" ",2)
-  for(i = 0; i < str.length-1; i++){
-    return str ++
+  const pairs = [];
+  for(i = 0; i < str.length; i+=2){
+    pairs.push(str.slice(i, i + 2));
   }
-  
+  return pairs;
 }
 
 const reverse = (str) => {
   // write code for strings.reverse
-
+  return str.split('').reverse().join('');
 }
 
 module.exports = {

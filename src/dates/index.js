@@ -10,13 +10,13 @@ const today = () => {
 const calendar = () => {
   // write code for dates.calendar
   // return moment().format('month','day',",",'year')
-  return moment().calendar('dddd');
+  return moment().format('MMMM DD, YYYY');
 }
 
 
 const currentTime = () => {
   // write code for dates.currentTime
-
+  return moment().format('hh:mm:ss A');
 }
 
 module.exports = {
